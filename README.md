@@ -32,11 +32,11 @@ source venv/bin/activate
 ```
 * for GPU users
 ```
-pip install -r requirements.txt
+pip install -r requirements_gpu.txt
 ```
 * for CPU users (there's some packages are not required for the CPU)
 ```
-pip install -r requirements_cpu.txt
+pip install -r requirements.txt
 ```
 #### Running the App
 Once you've installed the dependencies, you can run the Streamlit app using the following command:
