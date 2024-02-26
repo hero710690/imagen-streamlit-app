@@ -228,7 +228,7 @@ def img2img_tab():
 def display_output():
     output_image = get_image(OUTPUT_IMAGE_KEY)
     if output_image:
-        container = st.container(border=True)
+        
         st.write('Your image has been generated!', icon='🎇')
         num_images = len(output_image)
         images_per_row = 2  # Number of images to display per row
@@ -239,7 +239,7 @@ def display_output():
             cols = st.columns(len(row_images))  # Create columns for each image in the row
             for col, image in zip(cols, row_images):
                 with col:
-                    with container():
+                    with st.container():
                         st.image(image, use_column_width=True)
                         
     else:
