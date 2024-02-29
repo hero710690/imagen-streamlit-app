@@ -1,5 +1,4 @@
 libglib2.0-0
-python3-opencvlibgl1
 libgl1
 freeglut3-dev
 libgtk2.0-dev
