@@ -3,7 +3,8 @@ import datetime
 import os
 import re
 from typing import Literal
-
+import subprocess
+subprocess.check_call(["pip", "uninstall", "-y", "opencv-python"])
 import streamlit as st
 import torch
 from diffusers import (
