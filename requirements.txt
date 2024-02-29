@@ -24,6 +24,4 @@ torchmetrics==0.11.0
 torchsde==0.2.5
 torchvision==0.15.2
 tornado==6.2
-transformers==4.36.0  
-opencv-python-headless
-streamlit_webrtc==0.20.0
+transformers==4.36.0
