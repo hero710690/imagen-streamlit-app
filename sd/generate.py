@@ -5,6 +5,7 @@ import re
 from typing import Literal
 import subprocess
 subprocess.check_call(["pip", "uninstall", "-y", "opencv-python"])
+subprocess.check_call(["pip", "install", "opencv-python-headless"])
 import streamlit as st
 import torch
 from diffusers import (
