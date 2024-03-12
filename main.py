@@ -127,7 +127,12 @@ def inpainting():
         return None, None
 
     brush_size = st.number_input("Brush Size", value=50, min_value=1, max_value=100)
-
+    if image.height > image.width:
+        canvas_height = 768
+        canvas_width = int((canvas_height/768)*image.width) 
+    else:
+        canvas_width = 768
+        canvas_height = int((canvas_width/768)*image.height) 
     canvas_result = st_canvas(
         fill_color="rgba(255, 255, 255, 0.0)",
         stroke_width=brush_size,
