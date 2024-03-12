@@ -140,8 +140,8 @@ def inpainting():
         background_color="#000000",
         background_image=image,
         update_streamlit=True,
-        height=image.height*1.1,
-        width=image.width*1.1,
+        height=canvas_height,
+        width=canvas_width,
         drawing_mode="freedraw",
         key="inpainting-canvas",
     )
