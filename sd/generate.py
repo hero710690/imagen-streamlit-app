@@ -131,7 +131,7 @@ def generate(
 ):
     """Generates an image based on the given prompt and pipeline name"""
     prompt = [prompt]*num_images
-    negative_prompt = negative_prompt if negative_prompt else None
+    negative_prompt = [negative_prompt]*num_images if negative_prompt else None
     p = st.progress(0)
     callback = lambda step, *_: p.progress(step / steps)
 
